@@ -1,0 +1,81 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("https://miro.medium.com/v2/resize:fit:5120/1*GsImz-edoeuqCMfKxDus0w.jpeg");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(104, 84, 177, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  width: 400px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 11.2em;
+  margin-right: 11.2em;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card {
+  background: #007bff;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
+  margin: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+}
