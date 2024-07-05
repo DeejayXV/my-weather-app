@@ -4,8 +4,11 @@ const ForecastDisplay = ({ weatherData }) => {
   if (!weatherData) {
     return null;
   }
+  console.log(weatherData) //verifica i dati delle previsioni
+
 
   const dailyForecasts = weatherData.list.filter(forecast => forecast.dt_txt.includes('12:00:00'));
+  // filtra i dati, cosi avremo solo una previsione per giorno (ore 12:00) 
 
   return (
     

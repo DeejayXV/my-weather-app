@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 
 const CityInput = ({ onCityChange }) => {
-  const [city, setCity] = useState('');
+  const [city, setCity] = useState(''); //stato per meorizzare l'input della città
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e) => { // gestione per il cambiamento dell'input
     setCity(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  //gestione per il submit 
+  const handleSubmit = (e) => { 
     e.preventDefault();
-    onCityChange(city);
+    onCityChange(city); //chiama la funzione per ottenere i dati del meteo
   };
 
   return (

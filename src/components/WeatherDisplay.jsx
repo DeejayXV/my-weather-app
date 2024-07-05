@@ -4,6 +4,7 @@ const WeatherDisplay = ({ weatherData }) => {
   if (!weatherData) {
     return <div className="weather-info">Please enter a city to check the weather.</div>;
   }
+  console.log(weatherData) //verifica i dati del meteo attuale
 
   return (
     <div className="weather-info">
