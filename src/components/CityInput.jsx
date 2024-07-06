@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 const CityInput = ({ onCityChange }) => {
-  const [city, setCity] = useState(''); //stato per meorizzare l'input della città
+  const [city, setCity] = useState(''); // Stato per memorizzare l'input della città
 
-  const handleInputChange = (e) => { // gestione per il cambiamento dell'input
+  // Gestione del cambiamento dell'input
+  const handleInputChange = (e) => {
     setCity(e.target.value);
   };
 
-  //gestione per il submit 
-  const handleSubmit = (e) => { 
+  // Gestione del submit
+  const handleSubmit = (e) => {
     e.preventDefault();
-    onCityChange(city); //chiama la funzione per ottenere i dati del meteo
+    console.log("City:", city);
+    onCityChange(city); // Chiama la funzione per ottenere i dati meteo
   };
 
   return (
@@ -19,9 +21,9 @@ const CityInput = ({ onCityChange }) => {
         type="text" 
         value={city} 
         onChange={handleInputChange} 
-        placeholder="Enter a city name" 
+        placeholder="Enter city name" 
       />
-      <button type="submit">Check the Weather</button>
+        <button type="submit">Search</button>
     </form>
   );
 };
